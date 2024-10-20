@@ -1,0 +1,17 @@
+{
+  "themes": {
+    "themeTitle": "Väriteema",
+    "systemTheme": "Järjestelmä",
+    "lightTheme": "Vaalea",
+    "darkTheme": "Tumma"
+  },
+  "settingsTitle": "Asetukset",
+  "language": {
+    "languageTitle": "Kieli",
+    "en": "Englanti",
+    "fi": "Suomi"
+  },
+  "username": "Käyttäjänimi",
+  "profileTitle": "Profiili",
+  "preferencesTitle": "Asetukset"
+}

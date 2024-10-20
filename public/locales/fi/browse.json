@@ -1,0 +1,60 @@
+{
+  "title": "Selaa reseptejä",
+  "pagination": {
+    "previousPage": "Edellinen sivu",
+    "nextPage": "Seuraava sivu",
+    "currentPage": "Nykyinen sivu: {{page}}"
+  },
+  "sort": {
+    "createdAt": {
+      "asc": "Luotu (vanhin ensin)",
+      "desc": "Luotu (uusin ensin)"
+    },
+    "updatedAt": {
+      "asc": "Päivitetty (vanhin ensin)",
+      "desc": "Päivitetty (uusin ensin)"
+    },
+    "likes": {
+      "asc": "Vähiten tykätty",
+      "desc": "Eniten tykätty"
+    },
+    "name": {
+      "asc": "Otsikko (A-Z)",
+      "desc": "Otsikko (Z-A)"
+    },
+    "views": {
+      "asc": "Vähiten katsottu",
+      "desc": "Eniten katsottu"
+    }
+  },
+  "labels": {
+    "sort": "Järjestys",
+    "tags": "Tagit",
+    "maximumTime": {
+      "label": "Enimmäisaika (minuuttia)",
+      "placeholder": "Enimmäisaika"
+    },
+    "excludeIngredients": "Poislukien ainesosat"
+  },
+  "collections": {
+    "title": "Selaa kokoelmia",
+    "new": "Uusi kokoelma",
+    "myCollections": {
+      "title": "Omat kokoelmat",
+      "none": "Sinulla ei ole vielä omia kokoelmia."
+    },
+    "publicCollections": {
+      "title": "Julkiset kokoelmat",
+      "none": "Kukaan ei ole vielä luonut julkisia kokoelmia."
+    },
+    "item": {
+      "recipeCount_one": "{{count}} resepti",
+      "recipeCount_other": "{{count}} reseptiä"
+    }
+  },
+  "pageTitle": {
+    "collection": "Selaa kokoelmia",
+    "recipe": "Selaa reseptejä"
+  },
+  "noRecipes": "Reseptejä ei löytynyt"
+}

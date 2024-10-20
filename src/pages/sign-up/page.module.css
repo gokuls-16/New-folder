@@ -1,0 +1,33 @@
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: "Inter";
+  text-align: center;
+}
+
+.titleGradientPart {
+  background: linear-gradient(90deg, #ffb800 0%, #ff5e00 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
+  height: 100%;
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+}

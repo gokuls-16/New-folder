@@ -1,0 +1,15 @@
+.grid {
+  --_recipe-card-grid-min-item-width: 300px;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--_recipe-card-grid-min-item-width), 1fr)
+  );
+  grid-gap: 1rem;
+}
+
+@media screen and (max-width: 360px) {
+  .grid {
+    --_recipe-card-grid-min-item-width: 200px;
+  }
+}

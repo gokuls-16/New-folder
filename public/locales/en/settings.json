@@ -1,0 +1,17 @@
+{
+  "themes": {
+    "themeTitle": "Theme",
+    "systemTheme": "System",
+    "lightTheme": "Light",
+    "darkTheme": "Dark"
+  },
+  "settingsTitle": "Settings",
+  "language": {
+    "languageTitle": "Language",
+    "en": "English",
+    "fi": "Suomi"
+  },
+  "username": "Username",
+  "profileTitle": "Profile",
+  "preferencesTitle": "Preferences"
+}

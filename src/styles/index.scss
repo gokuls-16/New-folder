@@ -1,0 +1,132 @@
+:root,
+html[data-theme="light"] {
+  --background-color: #fff;
+  --background-color-secondary: #f1f1f1;
+  --text-black: #000;
+  --text-white: #fff;
+  --text: var(--text-black);
+  --text-inverted: var(--text-white);
+  --text-placeholder: #0000007f;
+  --primary: #f2c61d;
+  --primary-light: #fde47d;
+  --primary-shade-1: #dfb81c;
+  --button-secondary-hover-background: #ffd4503b;
+  --new-recipe-card-hover-background: #00000011;
+  --danger: #ea2727;
+  --danger-background: #ff4444;
+  --danger-hover-background: #ff4444aa;
+  --discreet: #aaa;
+  --tag-vegetarian-background-color: #d4fbd4;
+  --tag-vegetarian-text-color: #084a08;
+  --tag-vegan-background-color: #f5f5dc;
+  --tag-vegan-text-color: #614016;
+  --tag-lactoseFree-background-color: #f0f8ff;
+  --tag-lactoseFree-text-color: #20409f;
+  --tag-glutenFree-background-color: #fffaf0;
+  --tag-glutenFree-text-color: #905208;
+  --tag-border-color: #0003;
+  --button-disabled-background: #0000000f;
+  --button-disabled-border: #ffffff3d;
+  --button-disabled-text: #0000007f;
+  --disclaimer-info-background-color: #9fd2ff;
+  --recipe-card-image-background: #ececec;
+
+  --font-size-button: 0.9rem;
+}
+
+@mixin dark-mode {
+  --background-color: #1e2028;
+  --background-color-secondary: #2e323d;
+  --text: var(--text-white);
+  --text-inverted: var(--text-black);
+  --text-placeholder: #ffffff7f;
+  --primary: #f2c61d;
+  --primary-shade-1: #dfb81c;
+  --button-secondary-hover-background: #7a662957;
+  --new-recipe-card-hover-background: #ffffff11;
+  --tag-vegetarian-background-color: #0d360d;
+  --tag-vegetarian-text-color: #d4fbd4;
+  --tag-vegan-background-color: #614016;
+  --tag-vegan-text-color: #f6ecdf;
+  --tag-lactoseFree-background-color: #20409f;
+  --tag-lactoseFree-text-color: #f0f8ff;
+  --tag-glutenFree-background-color: #905208;
+  --tag-glutenFree-text-color: #fffaf0;
+  --tag-border-color: #fff2;
+  --button-disabled-background: #ffffff0d;
+  --button-disabled-border: #ffffff3d;
+  --button-disabled-text: #ffffffbd;
+  --disclaimer-info-background-color: #215788;
+  --recipe-card-image-background: #292b31;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @include dark-mode;
+  }
+}
+
+html[data-theme="dark"] {
+  @include dark-mode;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text);
+  padding: 0px;
+  margin: 0px;
+  min-height: 100vh;
+  display: flex;
+}
+
+#__next {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--text);
+  background-color: var(--background-color);
+  border: 1px solid var(--text);
+  padding: 0.2rem;
+}
+
+.instruction-editor-editable {
+  border: 1px solid var(--text);
+  padding: 0.25rem 0.5rem;
+}
+
+* {
+  font-family: var(--font-openSans);
+}
+
+hr {
+  border: 1px solid var(--text);
+  margin: 1rem 0;
+}
+
+.tiptap p.is-editor-empty:first-child::before {
+  color: var(--text-placeholder);
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}

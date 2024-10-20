@@ -1,0 +1,39 @@
+{
+  "myRecipes": "Omat reseptit",
+  "newRecipeButton": "Uusi resepti",
+  "newRecipeButtonLong": "Luo uusi resepti",
+  "newCollectionButton": "Uusi kokoelma",
+  "collections": {
+    "newCollectionTitle": "Uusi kokoelma",
+    "newCollectionNamePlaceholder": "Kokoelman nimi",
+    "newCollectionVisibility": "Näkyvyys",
+    "descriptionLabel": "Kuvaus",
+    "descriptionPlaceholder": "Kuvaus",
+    "searchPlaceholder": "Hae reseptejä",
+    "noRecipesFound": "Ei reseptejä haulla \"{{query}}\"",
+    "noRecipesExist": "Sinulla ei ole reseptejä",
+    "noRecipesExistCreate": "Luo ensimmäinen reseptisi",
+    "createCollection_one": "Luo kokoelma ({{count}} resepti)",
+    "createCollection_other": "Luo kokoelma ({{count}} reseptiä)",
+    "tile": {
+      "removeButton": "Poista",
+      "addButton": "Lisää",
+      "placeholderAltText": "Reseptin kuva"
+    },
+    "visibility": {
+      "public": "Julkinen",
+      "private": "Yksityinen",
+      "unlisted": "Piilotettu"
+    }
+  },
+  "landing": {
+    "tagline": "Keittokirja nykyajan digitaaliseen maailmaan",
+    "subTagline": "Lähde herkulliselle makumatkalle: tutki, luo ja jaa reseptejä ympäri maailmaa alustallamme, joka tuo ruoan ystävät yhteen!",
+    "heroImageAlt": "Kaksi ihmistä sekoittamassa kulhoa.",
+    "getStartedButton": "Rekisteröidy nyt"
+  },
+  "pageTitle": "Etusivu",
+  "metaTags": {
+    "description": "Recipeamigo on alusta, jossa voit luoda ja jakaa reseptejä muiden ihmisten kanssa"
+  }
+}

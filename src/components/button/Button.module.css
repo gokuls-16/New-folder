@@ -1,0 +1,74 @@
+.buttonComponent {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size-button);
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  gap: 0.5rem;
+}
+
+.buttonComponent:not(.rectangular) {
+  border-radius: 1rem;
+}
+
+.buttonComponent:not(.circular) {
+  padding: 0.5rem 1rem;
+}
+
+.primary {
+  background-color: var(--primary);
+  color: var(--text-black);
+}
+
+.primary:hover:not(:disabled) {
+  background-color: var(--primary-shade-1);
+}
+
+.secondary {
+  background-color: transparent;
+  border: none;
+  box-shadow: inset 0 0 0 2px var(--primary);
+  color: var(--text);
+}
+
+.secondary:disabled {
+  box-shadow: inset 0 0 0 2px var(--button-disabled-border);
+  color: var(--button-disabled-text);
+}
+
+.secondary:hover:not(:disabled) {
+  background-color: var(--button-secondary-hover-background);
+}
+
+.danger {
+  box-shadow: inset 0 0 0 2px var(--danger);
+  background-color: var(--danger-background);
+  color: var(--text-black);
+}
+
+.danger:hover:not(:disabled) {
+  background-color: var(--danger-hover-background);
+}
+
+.circular {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  display: flex;
+  padding: 0.2rem;
+}
+
+.buttonComponent:disabled {
+  background-color: var(--button-disabled-background);
+  color: var(--button-disabled-text);
+}
+
+.buttonComponent:not(.circular).size-medium {
+  padding: 0.5rem 1rem;
+}
+
+.buttonComponent:not(.circular).size-small {
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.4rem;
+}

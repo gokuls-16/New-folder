@@ -1,0 +1,131 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-family: var(--font-dmSerifDisplay);
+}
+
+.ingredientsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ingredientSectionList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.splitContainer {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 4%;
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    word-break: break-all;
+  }
+}
+
+.instructionsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.ingredientsContainer,
+.instructionsContainer {
+  gap: 0.5rem;
+}
+
+.topRow {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.recipeQuantityPickerContainer {
+  max-width: 250px;
+}
+
+.titleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.titleRowButtons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.coverImageContainer {
+  position: relative;
+  height: 350px;
+  width: 100%;
+}
+
+.coverImage {
+  object-fit: cover;
+}
+
+.splitTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.likeButton {
+  width: fit-content;
+}
+
+@media print {
+  .likeButton,
+  .titleRowButtons {
+    display: none;
+  }
+}
+
+.infoRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.viewCount,
+.likeCount,
+.timeEstimate {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .titleRow {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .splitContainer {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .topRow {
+    gap: 1.5rem;
+  }
+}

@@ -1,0 +1,52 @@
+.dialog {
+  background-color: var(--background-color);
+  color: var(--text);
+  padding: 3rem 5rem;
+  margin: auto;
+  border: none;
+  box-shadow: 0 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: visible;
+}
+
+.dialog::backdrop {
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+}
+
+@media screen and (max-width: 800px) {
+  .dialog {
+    --_margin: 20px;
+    padding: 3rem 3rem;
+    width: calc(100% - var(--_margin) * 2);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .dialog {
+    padding: 3rem 1rem;
+  }
+}
+
+.titleRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.titleRow.noTitle {
+  justify-content: flex-end;
+}
+
+.content {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: stretch;
+}

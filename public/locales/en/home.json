@@ -1,0 +1,40 @@
+{
+  "myRecipes": "My recipes",
+  "newRecipeButton": "New recipe",
+  "newRecipeButtonLong": "Create new recipe",
+  "newCollectionButton": "New collection",
+  "collections": {
+    "newCollectionTitle": "New collection",
+    "newCollectionNamePlaceholder": "Collection name",
+    "newCollectionVisibility": "Visibility",
+    "descriptionLabel": "Description",
+    "descriptionPlaceholder": "Description",
+    "searchPlaceholder": "Search recipes",
+    "noRecipesFound": "No recipes found for \"{{query}}\"",
+    "noRecipesExist": "You don't have any recipes",
+    "noRecipesExistCreate": "Create your first recipe",
+    "createCollection_one": "Create collection ({{count}} recipe)",
+    "createCollection_other": "Create collection ({{count}} recipes)",
+    "tile": {
+      "removeButton": "Remove",
+      "addButton": "Add",
+      "placeholderAltText": "Recipe placeholder image"
+    },
+    "visibility": {
+      "public": "Public",
+      "private": "Private",
+      "unlisted": "Unlisted"
+    }
+  },
+  "landing": {
+    "tagline": "A cookbook for the modern times",
+    "subTagline": "Embark on a delicious journey of flavours: explore, create, and share recipes from all around the world on our online platform, bringing food lovers together!",
+    "heroImageAlt": "Two people mixing a bowl.",
+    "getStartedButton": "Get started"
+  },
+  "pageTitle": "Home",
+  "metaTags": {
+    "description": "Recipeamigo is a platform where you can create and share recipes with other people"
+
+  }
+}

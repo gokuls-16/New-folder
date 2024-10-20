@@ -1,0 +1,149 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Recipe {
+  id                         String                 @id @default(uuid())
+  name                       String
+  description                String
+  createdAt                  DateTime               @default(now())
+  updatedAt                  DateTime               @updatedAt
+  userId                     String
+  user                       UserProfile            @relation(fields: [userId], references: [clerkId])
+  ingredientSections         IngredientSection[]
+  instructions               Instruction[]
+  quantity                   Int
+  visibility                 RecipeVisibility
+  viewCount                  Int                    @default(0)
+  timeEstimateMinimumMinutes Int                    @default(0)
+  timeEstimateMaximumMinutes Int?
+  coverImageName             String?
+  likes                      Like[]
+  tags                       Tag[]
+  RecipesOnCollections       RecipesOnCollections[]
+}
+
+enum RecipeVisibility {
+  PUBLIC
+  PRIVATE
+  UNLISTED
+}
+
+model Instruction {
+  id          String @id @default(uuid())
+  order       Int
+  description String
+  recipeId    String
+  recipe      Recipe @relation(fields: [recipeId], references: [id], onDelete: Cascade)
+
+  @@unique([recipeId, order])
+}
+
+model IngredientSection {
+  id          String       @id @default(uuid())
+  name        String
+  order       Int
+  recipeId    String
+  recipe      Recipe       @relation(fields: [recipeId], references: [id], onDelete: Cascade)
+  ingredients Ingredient[]
+
+  @@unique([recipeId, order])
+}
+
+model Ingredient {
+  id                  String            @id @default(uuid())
+  name                String
+  order               Int
+  quantity            Float
+  unit                IngredientUnit?
+  ingredientSection   IngredientSection @relation(fields: [ingredientSectionId], references: [id], onDelete: Cascade)
+  ingredientSectionId String
+  isOptional          Boolean           @default(false)
+
+  @@unique([ingredientSectionId, order])
+}
+
+enum IngredientUnit {
+  GRAM
+  CUP
+  TEASPOON
+  TABLESPOON
+  OUNCE
+  POUND
+  MILLILITER
+  DECILITER
+  LITER
+  PINCH
+  DASH
+  CLOVE
+  QUART
+  PINT
+  GALLON
+  KILOGRAM
+  SLICE
+  HANDFUL
+  CAN
+  BOTTLE
+  PACKAGE
+}
+
+model UserProfile {
+  clerkId           String             @id @unique
+  username          String             @unique
+  recipes           Recipe[]
+  likes             Like[]
+  recipeCollections RecipeCollection[]
+}
+
+model Like {
+  recipe    Recipe      @relation(fields: [recipeId], references: [id], onDelete: Cascade)
+  recipeId  String
+  user      UserProfile @relation(fields: [userId], references: [clerkId])
+  userId    String
+  createdAt DateTime    @default(now())
+
+  @@id([recipeId, userId])
+}
+
+model Tag {
+  text     String
+  recipe   Recipe @relation(fields: [recipeId], references: [id], onDelete: Cascade)
+  recipeId String
+  order    Int
+
+  @@id([recipeId, text])
+  @@unique([recipeId, order])
+}
+
+enum RecipeCollectionVisibility {
+  PUBLIC
+  PRIVATE
+  UNLISTED
+}
+
+model RecipeCollection {
+  id                   String                     @id @default(uuid())
+  name                 String
+  description          String?
+  userId               String
+  user                 UserProfile                @relation(fields: [userId], references: [clerkId])
+  createdAt            DateTime                   @default(now())
+  updatedAt            DateTime                   @updatedAt
+  RecipesOnCollections RecipesOnCollections[]
+  visibility           RecipeCollectionVisibility
+}
+
+model RecipesOnCollections {
+  recipeId           String
+  recipe             Recipe           @relation(fields: [recipeId], references: [id], onDelete: Cascade)
+  recipeCollectionId String
+  recipeCollection   RecipeCollection @relation(fields: [recipeCollectionId], references: [id], onDelete: Cascade)
+  createdAt          DateTime         @default(now())
+
+  @@id([recipeId, recipeCollectionId])
+}

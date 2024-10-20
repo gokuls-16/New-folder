@@ -1,0 +1,39 @@
+{
+  "navbar": {
+    "home": "Home",
+    "settings": "Settings",
+    "browse": "Browse",
+    "browseCollections": "Collections",
+    "likes": "Likes",
+    "profile": "Profile",
+    "closeNavbar": "Close navigation menu",
+    "openNavbar": "Open navigation menu"
+  },
+  "actions": {
+    "export": "Export",
+    "exportAsJson": "Export as JSON",
+    "exportAsMarkdown": "Export as Markdown",
+    "exportAsPdf": "Export as PDF",
+    "edit": "Edit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "create": "Create",
+    "print": "Print",
+    "signUp": "Sign up",
+    "logIn": "Log in",
+    "delete": "Delete"
+  },
+  "actionResults": {
+    "saved": "Saved"
+  },
+  "recipeFilter": {
+    "searchPlaceholder": "Search"
+  },
+  "dialog": {
+    "closeLabel": "Close"
+  },
+  "pageTitles": {
+    "login": "Log in",
+    "signUp": "Sign up"
+  }
+}

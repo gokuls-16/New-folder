@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.splitContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.leftPanel {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.rightPanel {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.recipeNameInput {
+  font-size: 2rem;
+  width: 100%;
+}
+
+.descriptionInput {
+  width: 100%;
+  resize: vertical;
+  min-height: 6rem;
+}
+
+.timeEstimateContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.ingredientsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+  .splitContainer {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

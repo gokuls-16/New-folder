@@ -1,0 +1,133 @@
+{
+  "timeEstimate": {
+    "single_one": "{{count}} minute",
+    "single_other": "{{count}} minutes",
+    "range": "{{min}} - {{max}} minutes"
+  },
+  "likes": {
+    "likeCountText_one": "{{count}} like",
+    "likeCountText_other": "{{count}} likes",
+    "likeButton": "Like",
+    "unlikeButton": "Unlike"
+  },
+  "recipeQuantity": {
+    "title": "Recipe quantity",
+    "decrease": "Decrease",
+    "increase": "Increase"
+  },
+  "ingredients": {
+    "title": "Ingredients",
+    "noIngredients": "No ingredients"
+  },
+  "instructions": {
+    "title": "Instructions",
+    "noInstructions": "No instructions"
+  },
+  "recipeVisibility": {
+    "public": "Public",
+    "private": "Private",
+    "unlisted": "Unlisted"
+  },
+  "title": "New recipe",
+  "edit": {
+    "title": "Editing {{name}}",
+    "recipeName": "Recipe name",
+    "description": "Description",
+    "visibility": "Visibility",
+    "timeEstimateTitle": "Time estimate (optional)",
+    "timeEstimate": "<0></0>min to <3></3>min",
+    "saveRecipe": "Save recipe",
+    "editingIngredientTitle": "Editing \"{{ingredientName}}\"",
+    "editingInstructionTitle": "Editing instruction",
+    "instructions": {
+      "newInstructionPlaceholder": "Mix eggs and flour...",
+      "addInstructionButton": "Add instruction"
+    },
+    "ingredients": {
+      "newIngredientTitle": "New ingredient",
+      "ingredientName": "Ingredient name",
+      "amount": "Amount",
+      "unit": "Unit",
+      "noUnit": "No unit",
+      "noUnitFound": "No unit {{query}} found",
+      "isOptional": "Optional",
+      "addIngredientButton": "Add ingredient",
+      "selectPlaceholder": "Type to create or search...",
+      "newIngredientPrompt": "Create \"{{name}}\""
+    },
+    "ingredientSections": {
+      "newSectionTitle": "New section",
+      "sectionName": "Section name",
+      "deletion": {
+        "title": "Delete section?",
+        "text": "Are you sure you want to delete this ingredient section? This action cannot be undone."
+      },
+      "empty": "No ingredients",
+      "edit": {
+        "title": "Editing \"{{name}}\""
+      }
+    },
+    "settingsButton": "Settings",
+    "settings": {
+      "title": "Settings",
+      "tagsLabel": "Tags",
+      "tagSelectPlaceholder": "Type to create or search...",
+      "tagSelectFormatCreateLabel": "Add \"{{name}}\""
+    },
+    "misc": {
+      "countdown": {
+        "newCountdownTitle": "New timer",
+        "addCountdownButton": "Insert timer",
+        "duration": {
+          "hours": "Hours",
+          "minutes": "Minutes",
+          "seconds": "Seconds",
+          "totalSeconds": "Total seconds"
+        }
+      }
+    },
+    "delete": {
+      "title": "Delete recipe?",
+      "text": "Are you sure you want to delete this recipe? This action cannot be undone.",
+      "success": "Recipe deleted."
+    }
+  },
+  "createRecipe": "Create recipe",
+  "coverImageDropzone": {
+    "title": "Cover image",
+    "dragActive": "Drop the image here ...",
+    "dragInactive": "Drag and drop an image here, or click to select an image to upload.",
+    "errors": {
+      "fileIsTooLarge": "Image is too large.",
+      "unsupportedFileType": "The image must be either PNG, JPEG, JPG, or GIF.",
+      "unexpectedError": "Unexpected error."
+    }
+  },
+  "export": {
+    "createdAt": "Created {{val, datetime}}",
+    "author": "Author: {{name}}",
+    "tags": "Tags: {{tags, list}}",
+    "views_one": "{{count}} view",
+    "views_other": "{{count}} views"
+  },
+  "collections": {
+    "addToCollectionButton": "Add to collection",
+    "title": "Select collections",
+    "addToCollections_one": "Add recipe to {{count}} collection",
+    "addToCollections_other": "Add recipe to {{count}} collections",
+    "removeFromCollections_one": "Remove recipe from {{count}} collection",
+    "removeFromCollections_other": "Remove recipe from {{count}} collections",
+    "removeFromCollectionsCombined_one": "remove recipe from {{count}} collection",
+    "removeFromCollectionsCombined_other": "remove recipe from {{count}} collections",
+    "addAndRemoveFromCollections": "$t(collections.addToCollections, {\"count\": {{addCount}}}) and $t(collections.removeFromCollectionsCombined, {\"count\": {{removeCount}}})",
+    "noEdits": "No edits",
+    "noCollections": {
+      "text": "You don't have any collections yet.",
+      "link": "Create your first collection"
+    },
+    "hiddenDisclaimers": {
+      "unlisted": "As this recipe is unlisted, it cannot be added to public collections. We have hidden your public collections from this list.",
+      "private": "As this recipe is private, it cannot be added to public or unlisted collections. We have hidden your public and unlisted collections from this list."
+    }
+  }
+}

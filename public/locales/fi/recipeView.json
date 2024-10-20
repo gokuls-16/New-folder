@@ -1,0 +1,133 @@
+{
+  "timeEstimate": {
+    "single_one": "{{count}} minuutti",
+    "single_other": "{{count}} minuuttia",
+    "range": "{{min}} - {{max}} minuuttia"
+  },
+  "likes": {
+    "likeCountText_one": "{{count}} tykkäys",
+    "likeCountText_other": "{{count}} tykkäystä",
+    "likeButton": "Tykkää",
+    "unlikeButton": "Poista tykkäys"
+  },
+  "recipeQuantity": {
+    "title": "Annosmäärä",
+    "decrease": "Vähennä",
+    "increase": "Kasvata"
+  },
+  "ingredients": {
+    "title": "Ainesosat",
+    "noIngredients": "Ei ainesosia"
+  },
+  "instructions": {
+    "title": "Ohjeet",
+    "noInstructions": "Ei ohjeita"
+  },
+  "recipeVisibility": {
+    "public": "Julkinen",
+    "private": "Yksityinen",
+    "unlisted": "Piilotettu"
+  },
+  "title": "Uusi resepti",
+  "edit": {
+    "title": "Muokataan {{name}}",
+    "recipeName": "Reseptin nimi",
+    "description": "Kuvaus",
+    "visibility": "Näkyvyys",
+    "timeEstimateTitle": "Aika-arvio (vapaaehtoinen)",
+    "timeEstimate": "<0></0>min - <3></3>min",
+    "saveRecipe": "Tallenna resepti",
+    "editingIngredientTitle": "Muokataan \"{{ingredientName}}\"",
+    "editingInstructionTitle": "Muokataan ohjetta",
+    "instructions": {
+      "newInstructionPlaceholder": "Sekoita kananmunat ja vehnäjauho...",
+      "addInstructionButton": "Lisää ohje"
+    },
+    "ingredients": {
+      "newIngredientTitle": "Uusi ainesosa",
+      "ingredientName": "Ainesosan nimi",
+      "amount": "Määrä",
+      "unit": "Yksikkö",
+      "noUnit": "Ei yksikköä",
+      "noUnitFound": "Yksikköä \"{{query}}\" ei löytynyt",
+      "isOptional": "Vapaaehtoinen",
+      "addIngredientButton": "Lisää ainesosa",
+      "selectPlaceholder": "Kirjoita luodaksesi tai etsiäksesi...",
+      "newIngredientPrompt": "Luo \"{{name}}\""
+    },
+    "ingredientSections": {
+      "newSectionTitle": "Uusi osio",
+      "sectionName": "Osion nimi",
+      "deletion": {
+        "title": "Poistetaanko osio?",
+        "text": "Oletko varma, että haluat poistaa tämän osion? Tätä ei voi peruuttaa."
+      },
+      "empty": "Ei ainesosia",
+      "edit": {
+        "title": "Muokataan \"{{name}}\""
+      }
+    },
+    "settingsButton": "Asetukset",
+    "settings": {
+      "title": "Asetukset",
+      "tagsLabel": "Tagit",
+      "tagSelectPlaceholder": "Kirjoita luodaksesi tai etsiäksesi...",
+      "tagSelectFormatCreateLabel": "Luo \"{{name}}\""
+    },
+    "misc": {
+      "countdown": {
+        "newCountdownTitle": "Uusi ajastin",
+        "addCountdownButton": "Lisää ajastin",
+        "duration": {
+          "hours": "Tuntia",
+          "minutes": "Minuuttia",
+          "seconds": "Sekuntia",
+          "totalSeconds": "Sekuntia yhteensä"
+        }
+      }
+    },
+    "delete": {
+      "title": "Poistetaanko resepti?",
+      "text": "Oletko varma, että haluat poistaa tämän reseptin? Tätä ei voi peruuttaa.",
+      "success": "Resepti poistettu."
+    }
+  },
+  "createRecipe": "Luo resepti",
+  "coverImageDropzone": {
+    "title": "Kansikuva",
+    "dragActive": "Pudota kuva tänne ...",
+    "dragInactive": "Raahaa ja pudota kuva tänne, tai klikkaa valitaksesi kuva.",
+    "errors": {
+      "fileIsTooLarge": "Kuva on liian suuri.",
+      "unsupportedFileType": "Kuvan täytyy olla joko PNG, JPEG, JPG, tai GIF.",
+      "unexpectedError": "Tuntematon virhe."
+    }
+  },
+  "export": {
+    "createdAt": "Luotu {{val, datetime}}",
+    "author": "Tekijä: {{name}}",
+    "tags": "Tagit: {{tags, list}}",
+    "views_one": "{{count}} näyttökerta",
+    "views_other": "{{count}} näyttökertaa"
+  },
+  "collections": {
+    "addToCollectionButton": "Lisää kokoelmaan",
+    "title": "Valitse kokoelmat",
+    "addToCollections_one": "Lisää resepti {{count}} kokoelmaan",
+    "addToCollections_other": "Lisää resepti {{count}} kokoelmaan",
+    "removeFromCollections_one": "Poista resepti {{count}} kokoelmasta",
+    "removeFromCollections_other": "Poista resepti {{count}} kokoelmasta",
+    "removeFromCollectionsCombined_one": "poista resepti {{count}} kokoelmasta",
+    "removeFromCollectionsCombined_other": "poista resepti {{count}} kokoelmasta",
+    "addAndRemoveFromCollections": "$t(collections.addToCollections, {\"count\": {{addCount}}}) ja $t(collections.removeFromCollectionsCombined, {\"count\": {{removeCount}}})",
+    "noEdits": "Ei muutoksia",
+    "noCollections": {
+      "text": "Sinulla ei ole vielä kokoelmia.",
+      "link": "Luo ensimmäinen kokoelmasi"
+    },
+    "hiddenDisclaimers": {
+      "unlisted": "Koska tämä resepti on piilotettu, sitä ei voi lisätä julkisiin kokoelmiin. Olemme piilottaneet julkiset kokoelmasi tästä listasta.",
+      "private": "Koska tämä resepti on yksityinen, sitä ei voi lisätä julkisiin eikä piilotettuihin kokoelmiin. Olemme piilottaneet julkiset ja piilotetut kokoelmasi tästä listasta."
+    }
+  }
+}

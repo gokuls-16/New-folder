@@ -1,0 +1,5 @@
+.ingredientListItem {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+}

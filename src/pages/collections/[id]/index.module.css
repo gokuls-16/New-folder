@@ -1,0 +1,18 @@
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.infoRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

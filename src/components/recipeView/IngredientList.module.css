@@ -1,0 +1,10 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.listItem {
+  background-color: var(--background-color-secondary);
+  padding: 0.3rem 0.6rem;
+}

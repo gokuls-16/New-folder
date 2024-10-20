@@ -1,0 +1,39 @@
+{
+  "navbar": {
+    "home": "Etusivu",
+    "settings": "Asetukset",
+    "browse": "Selaa",
+    "browseCollections": "Kokoelmat",
+    "likes": "Tykkäykset",
+    "profile": "Profiili",
+    "closeNavbar": "Sulje navigaatiopalkki",
+    "openNavbar": "Avaa navigaatiopalkki"
+  },
+  "actions": {
+    "export": "Vie",
+    "exportAsJson": "Vie JSON-muodossa",
+    "exportAsMarkdown": "Vie Markdown-muodossa",
+    "exportAsPdf": "Vie PDF-tiedostona",
+    "edit": "Muokkaa",
+    "cancel": "Peruuta",
+    "save": "Tallenna",
+    "create": "Luo",
+    "print": "Tulosta",
+    "signUp": "Rekisteröidy",
+    "logIn": "Kirjaudu",
+    "delete": "Poista"
+  },
+  "actionResults": {
+    "saved": "Tallennettu"
+  },
+  "recipeFilter": {
+    "searchPlaceholder": "Etsi"
+  },
+  "dialog": {
+    "closeLabel": "Sulje"
+  },
+  "pageTitles": {
+    "login": "Kirjaudu",
+    "signUp": "Rekisteröidy"
+  }
+}
